@@ -575,3 +575,90 @@ footer {
     text-align: center;
     margin: 5px;
 }
+
+.product__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product__image{ 
+    width: 350px;
+    height: 450px;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__info-right {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.product__name {
+    margin-bottom: 25px;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+}
+
+.product__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.product__price {
+    display: flex;
+    align-items: center;
+}
+
+.product__rub {
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.product__button {
+    margin-left: 15px;
+    border: 1px solid #101010;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__container {
+    display: flex;
+    align-items: center;
+}
+
+.product__box {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.product__name-box {
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.product__paragraf {
+    text-align: center;
+    font-size: 14px;
+}
