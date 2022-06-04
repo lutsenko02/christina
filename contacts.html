@@ -109,11 +109,11 @@
                 <div class="feedback__container">
                     <div class="feedback__wrapper">
                         <form class="feedback__form">
-                            <input type="text" id="name" placeholder="Ваше имя" class="feedback__name">
-                            <input type="email" id="email" placeholder="Ваше почта" class="feedback__email">
-                            <input type="text" id="text" placeholder="Ваше сообщение" class="feedback__text">
+                            <input type="text" id="name" placeholder="Ваше имя" class="feedback__name" required>
+                            <input type="email" id="email" placeholder="Ваше почта" class="feedback__email" required>
+                            <input type="text" id="text" placeholder="Ваше сообщение" class="feedback__text" required>
                             <div class="feedback__check">
-                                <input required id="policy" type="checkbox" name="feedback-pact" class="feedback__checkbox-real">
+                                <input id="policy" type="checkbox" name="feedback-pact" class="feedback__checkbox-real" required>
                                 <label for="policy" class="feedback__checkbox">
                                     <span class="feedback__checkbox-custom"></span>
                                 </label>
