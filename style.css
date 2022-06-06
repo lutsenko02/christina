@@ -87,6 +87,107 @@ a {
     width: 175px;
 }
 
+.burger {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.burger__menu {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* -------------------------burger--------------------------- */
+/* .burger {
+    height: 100%;
+    width: 45%;
+    position: fixed; 
+    z-index: 100; 
+    right: 0;
+    top: 0;
+    background-color: #ffebc6;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.burger__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 100px 45px 65px;
+    gap: 30px;
+}
+
+.burger__account, 
+.burder__number,
+.burger__social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 45px 65px;
+    gap: 30px;
+}
+
+.burger__element-partition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 15px;
+}
+
+.burger__element {
+    color: #4d4d4d;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.burger a {
+    text-decoration: none;
+    color: #4d4d4d;
+    display: block; 
+    transition: 0.3s; 
+}
+  
+.burger .closebtn {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-weight: 100;
+    left: 40px;
+    font-size: 80px;
+}
+
+.burger__span {
+    color: #101010;
+    font-family: 'Prata', serif;
+    font-size: 25px;
+}
+
+.burger__logo {
+    color: #101010;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.burger__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin: 25px 30px 0 0;
+} */
+
+/* --------------------burger-finished----------------------- */
+
 .mainblock__content {
     margin: 0 auto;
     font-family: 'Prata', serif;
@@ -906,24 +1007,13 @@ footer {
 
 @media screen and (max-width:767px) {
 
-    .mainblock__menu {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        z-index: -1;
+
+    .mainblock__number {
+        display: none;
     }
 
     .content__title {
         font-size: 20px;
-    }
-
-    .mainblock__authorization {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        z-index: -1;
     }
 
     .mainblock__subtitle-delivery {
@@ -1177,6 +1267,102 @@ footer {
 }
 
 @media screen and (max-width:575px) {
+    /* burger */
+
+    .burger {
+        z-index: 200;
+        opacity: 1;
+    }
+    
+    .burger__menu {
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .burger {
+        height: 100%;
+        width: 0%;
+        position: fixed; 
+        z-index: 100; 
+        right: 0;
+        top: 0;
+        background-color: #ffebc6;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .burger__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 100px 45px 65px;
+        gap: 30px;
+    }
+    
+    .burger__account, 
+    .burder__number,
+    .burger__social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 10px 45px 65px;
+        gap: 30px;
+    }
+    
+    .burger__element-partition {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto 15px;
+    }
+    
+    .burger__element {
+        color: #4d4d4d;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    
+    .burger a {
+        text-decoration: none;
+        color: #4d4d4d;
+        display: block; 
+        transition: 0.3s; 
+    }
+      
+    .burger .closebtn {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        font-weight: 100;
+        left: 40px;
+        font-size: 80px;
+    }
+    
+    .burger__span {
+        color: #101010;
+        font-family: 'Prata', serif;
+        font-size: 25px;
+    }
+    
+    .burger__logo {
+        color: #101010;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+    }
+    
+    .burger__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        margin: 25px 30px 0 0;
+    }
+    
+    /*  burger-end  */
+
 
     .mainblock__menu {
     display: none;

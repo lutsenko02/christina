@@ -10,3 +10,12 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
   keyboard: true,
 });
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the burger */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
