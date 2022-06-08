@@ -212,6 +212,10 @@ html {
     color: #101010;
 }
 
+/* .swiper-pagination-bullet-active {
+    background-color: #101010;
+} */
+
 
 .content__advantage {
     display: flex;
@@ -1199,6 +1203,7 @@ footer {
 }
 
 @media screen and (max-width:575px) {
+    
     /* burger */
 
     .burger {
