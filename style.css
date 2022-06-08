@@ -103,91 +103,6 @@ a {
     z-index: -1;
 }
 
-/* -------------------------burger--------------------------- */
-/* .burger {
-    height: 100%;
-    width: 45%;
-    position: fixed; 
-    z-index: 100; 
-    right: 0;
-    top: 0;
-    background-color: #ffebc6;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.burger__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 100px 45px 65px;
-    gap: 30px;
-}
-
-.burger__account, 
-.burder__number,
-.burger__social {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 45px 65px;
-    gap: 30px;
-}
-
-.burger__element-partition {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 15px;
-}
-
-.burger__element {
-    color: #4d4d4d;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.burger a {
-    text-decoration: none;
-    color: #4d4d4d;
-    display: block; 
-    transition: 0.3s; 
-}
-  
-.burger .closebtn {
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    font-weight: 100;
-    left: 40px;
-    font-size: 80px;
-}
-
-.burger__span {
-    color: #101010;
-    font-family: 'Prata', serif;
-    font-size: 25px;
-}
-
-.burger__logo {
-    color: #101010;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-}
-
-.burger__menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    margin: 25px 30px 0 0;
-} */
-
-/* --------------------burger-finished----------------------- */
-
 .mainblock__content {
     margin: 0 auto;
     font-family: 'Prata', serif;
@@ -405,6 +320,14 @@ footer {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px; 
+}
+
+.footer__right-unicorn:hover {
+    text-decoration: underline;
+}
+
+.footer__politic:hover {
+    text-decoration: underline;
 }
 
 .contacts {
@@ -854,6 +777,10 @@ footer {
     justify-content: center;
 }
 
+.contacts__phone-left {
+    width: 175px;
+}
+
 @media screen and (max-width:1199px) {
 
     .mainblock__content {
@@ -895,6 +822,11 @@ footer {
     body {
         font-size: 12px;
     }
+
+    .contacts__phone-left {
+        width: 120px;
+    }
+
     .mainblock__number {
         width: 120px;
     }
@@ -1440,8 +1372,8 @@ footer {
     }
 
     .contacts__flower2 {
-        width: 85px;
-        height: 85px;
+        width: 100px;
+        height: 100px;
     }
 
     .contacts__city1 {
@@ -1465,7 +1397,7 @@ footer {
         height: 100px;
         position: absolute;
         float: left;
-        margin-left: -26px;
+        margin-left: -10px;
         margin-top: -73px;
     }
 
@@ -1510,42 +1442,10 @@ footer {
         font-size: 16px;
         max-width: 250px;
     }
-    /*     .product__img-min {
-        width: 200px;
-        height: 200px;
+  
+    .pact {
+        font-size: 12px;
+        max-width: 310px;
+        margin: 50px auto;
     }
-
-    .product__info {
-        flex-direction: column;
-    }
-
-
-
-    .product__info-right {
-        margin: 0 auto;
-        max-width: 500px;
-    }
-
-    .product__similar {
-        width: 175px;
-        height: 310px;
-        margin: 25px 5px;
-    }
-
-    .product__value {
-        width: 125px;
-        height: 40px;
-    }
-
-    .product__name-min {
-        max-width: 150px;
-    }
-
-    .product__name {
-        text-align: center;
-    }
-
-    .product__price {
-        justify-content: center;
-    } */
 }
