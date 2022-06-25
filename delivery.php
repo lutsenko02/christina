@@ -1,78 +1,24 @@
+<?php
+/**
+ * Template Name: Доставка
+ * Template Post Type: page
+ */
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
     <title>CHRISTINA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\wp-content\themes\CHRISTINA\style.css">
 </head>
 <body>
     <header class="wrapper">
         <div class="mainblock">
-            <div class="mainblock__navigation">
-                <div class="mainblock__number">
-                    <a href="tel:+7(938)106-51-81">+7(938)106-51-81</a>
-                    <a href="tel:+7(988)254-98-85">+7(988)254-98-85</a>
-                </div>
-
-                <div class="mainblock__logo"><a href="index.html">christina</a></div>
-
-                <nav class="mainblock__menu">
-                    <a href="products.html" class="mainblock__link">продукция</a>
-                    <a href="delivery.html" class="mainblock__link">доставка</a>
-                    <a href="contacts.html" class="mainblock__link">контакты</a>
-                    <a href="" class="mainblock__link"><img src="img/shop.svg" alt="корзина"></a>
-                </nav>    
-            </div>
-
-            <div class="mainblock__authorization">
-                <a href="" class="mainblock__sign-in">войти</a>
-                <a href="" class="mainblock__sign-in"><img src="img/user.svg" alt="вход"></a>
-                <a href="" class="mainblock__registration">регистрация</a>
-            </div>
-
-            <div id="myNav" class="burger">
-
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    
-                <div class="burger__content">
-                    <div class="burger__element-partition">
-                        <p class="burger__span burger__logo">christina</p>
-                    </div>
-                    <a href="index.html" class="burger__element">главная</a>
-                    <a href="products.html" class="burger__element">продукция</a>
-                    <a href="delivery.html" class="burger__element">доставка</a>
-                    <a href="contacts.html" class="burger__element">контакты</a>
-                    <a href="" class="burger__element">корзина</a>
-                </div>
-
-                <div class="burger__account">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Вход в аккаунт</p>
-                    </div>
-                    <a href="" class="burger__element">вход</a>
-                    <a href="" class="burger__element">регистрация</a>
-                </div>
-
-                <div class="burger__social">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Социальные сети</p>
-                    </div>
-                    <a href="" class="burger__element">Telegram</a>
-                    <a href="" class="burger__element">Vkontakte</a>
-                </div>
-
-                <div class="burder__number">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Контактный номер</p>
-                    </div>
-                    <a href="tel:+7(938)106-51-81" class="burger__element">+7(938)106-51-81</a>
-                    <a href="tel:+7(988)254-98-85" class="burger__element">+7(988)254-98-85</a>
-                </div>
-            </div>
-    
-            <span onclick="openNav()" class="burger__menu"><img src="/img/burger.svg" alt=""></span>
+            <?php get_header() ?>
 
             <div class="mainblock__content-delevery">
                 <div class="mainblock__text">
@@ -80,7 +26,7 @@
                     <div class="mainblock__subtitle-delivery">Наш магазин доставляет заказы во все регионы России.</div>
                 </div>
                 <div class="mainblock__footer">
-                    <a href="#delivery" class="mainblock__arrow"><img src="img/arrow.svg" alt="стрелка"></a>
+                    <a href="#delivery" class="mainblock__arrow"><img src="\wp-content\themes\CHRISTINA\img\arrow.svg" alt="стрелка"></a>
                 </div>
             </div>
 
@@ -89,7 +35,7 @@
 
     <main class="wrapper">
         <div class="delivery">
-            <div class="delivery__flower"><img src="img/flower9.png" alt=""></div>
+            <div class="delivery__flower"><img src="\wp-content\themes\CHRISTINA\img\flower9.png" alt=""></div>
             <div class="content__title" id="delivery">Доставка курьером</div>
             <div class="delivery__block">
                 <p class="delivery__text">Ростовская область:
@@ -108,8 +54,8 @@
                 </p>
                 <div class="delivery__container">
                     <p class="delivery__text-frame">Стоимость доставки – 300 рублей. ( от 3000 руб заказ доставляется бесплатно)Доставка осуществляется с 10:00 до 19:00 в будние дни , ближайший доступный день доставки , уточняйте у менеджера</p>
-                    <p class="delivery__text-frame">Доставка с помощью сервиса Boxberry. Стоимость доставки уточняется оператором и зависит от адреса доставки. * Рассчитать стоимость доставки можно на сайте <a href="https://boxberry.ru/calculate_the_cost_of_sending/">https://boxberry.ru/calculate_the_cost_of_sending/</a> . Отследить статус доставки можно на сайте boxberry.ru .* При доставке до пункта самовывоза – бесплатно при заказе от 3000 руб.</p>
-                    <p class="delivery__text-frame">Доставка с помощью сервиса СДЭК. Стоимость доставки уточняется оператором и зависит от адреса доставки.* При доставке до пункта самовывоза – бесплатно при заказе от 3000 руб. Отследить статус доставки можно на сайте <a href="https://www.cdek.ru/track.html">https://www.cdek.ru/track.html</a> </p>
+                    <p class="delivery__text-frame">Доставка с помощью сервиса Boxberry. Стоимость доставки уточняется оператором и зависит от адреса доставки. * Рассчитать стоимость доставки можно на сайте <a href="\wp-content\themes\CHRISTINA\https://boxberry.ru/calculate_the_cost_of_sending/">https://boxberry.ru/calculate_the_cost_of_sending/</a> . Отследить статус доставки можно на сайте boxberry.ru .* При доставке до пункта самовывоза – бесплатно при заказе от 3000 руб.</p>
+                    <p class="delivery__text-frame">Доставка с помощью сервиса СДЭК. Стоимость доставки уточняется оператором и зависит от адреса доставки.* При доставке до пункта самовывоза – бесплатно при заказе от 3000 руб. Отследить статус доставки можно на сайте <a href="\wp-content\themes\CHRISTINA\https://www.cdek.ru/track.php">https://www.cdek.ru/track.php</a> </p>
                 </div>
                 <div class="content__line"></div>
             </div>
@@ -157,13 +103,13 @@
                                 Банковской картой при оформлении на сайте, в офисе при самовывозе, при доставке у курьера компании. Обратите внимание: стоимость доставки оплачивается отдельно.
                                 Оплата Банковской картой
                                 Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку Оплата заказа банковской картой. Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем: МИР, VISA, MasterCard, JCB</p>
-                            <img class="about-block__img" src="img/flower7.png" alt="Иконка 1">
+                            <img class="about-block__img" src="\wp-content\themes\CHRISTINA\img\flower7.png" alt="Иконка 1">
                         </div>
                         <div class="about-block">
                             <p class="about-block__text">Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure, для проведения платежа также может потребоваться ввод специального пароля. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa, Int., MasterCard Europe Sprl, JCB.
 
                                 Оформляя заказ в интернет-магазине Вы соглашаетесь с договором-офертой.</p>
-                            <img class="about-block__img" src="img/flower8.png" alt="Иконка 2">
+                            <img class="about-block__img" src="\wp-content\themes\CHRISTINA\img\flower8.png" alt="Иконка 2">
                         </div>
                     </div>
                 </div>
@@ -173,7 +119,7 @@
                 <div class="content__title">Возврат и обмен товара</div>
                 <div class="content__wrapper" id="text">
                     <div class="content__block">
-                        <p class="content__text">Требование покупателя об обмене либо о возврате товара подлежит удовлетворению, если товар не был в употреблении, сохранены его потребительские свойства, сохранена и не нарушена упаковка, сохранены документы, подтверждающие факт покупки этого товара в интернет-магазине <a href="www.kbcshop.ru">www.kbcshop.ru</a>
+                        <p class="content__text">Требование покупателя об обмене либо о возврате товара подлежит удовлетворению, если товар не был в употреблении, сохранены его потребительские свойства, сохранена и не нарушена упаковка, сохранены документы, подтверждающие факт покупки этого товара в интернет-магазине <a href="\wp-content\themes\CHRISTINA\www.kbcshop.ru">www.kbcshop.ru</a>
                             <br> 
                             <br>
                             Срок такого требования составляет 7 (семь) дней с момента передачи товара, либо в любое время до передачи товара покупателю.
@@ -188,39 +134,10 @@
             <div class="agreement">
                 <div class="content__title">Политика конфиденциальности и пользовательское соглашение</div>
                 <div class="agreement__button">
-                    <a href="pact.html">Читать пользовательское соглашение.</a>
+                    <a href="\wp-content\themes\CHRISTINA\pact.php">Читать пользовательское соглашение.</a>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer>
-        <div class="footer">
-            <div class="footer__menu">
-
-                <div class="footer__up">
-                    <div class="footer__politic"><a href="">Политика обработки персональных данных</a></div>
-                    <div class="footer__right">
-                        <a href=""><img src="img/tg.svg" alt="telegram" class="footer__icon"></a>
-                        <a href=""><img src="img/vk.svg" alt="vkontacte" class="footer__icon"></a>
-                    </div>
-                </div>
-
-                <div class="footer__line"></div>
-
-                <div class="footer__down">
-                    <p class="footer__ch">© 2022 CHRISTINA</p>
-                    <div class="footer__right">
-                        <p class="footer__right">Сайт разработала <a href="https://vk.com/ira_unicorn" class="footer__right-unicorn">Луценко Ирина</a></p>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+    
+    <?php get_footer() ?>

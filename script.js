@@ -5,7 +5,8 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
+    clickable: true,
   },
   mousewheel: true,
   keyboard: true,
@@ -15,7 +16,13 @@ function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 
-/* Close when someone clicks on the "x" symbol inside the burger */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+}
+
+let category = document.querySelector('.products__container-filter');
+if (category) {
+    category.onclick = function() {
+     document.querySelector('.products__category-list-wp').classList.toggle("drop");
+    }
 }

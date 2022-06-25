@@ -1,78 +1,25 @@
+<?php
+/**
+ * Template Name: Продукция
+ * Template Post Type: page
+ */
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
     <title>CHRISTINA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\wp-content\themes\CHRISTINA\style.css">
 </head>
 <body>
     <header class="wrapper">
         <div class="mainblock">
-            <div class="mainblock__navigation">
-                <div class="mainblock__number">
-                    <a href="tel:+7(938)106-51-81">+7(938)106-51-81</a>
-                    <a href="tel:+7(988)254-98-85">+7(988)254-98-85</a>
-                </div>
-
-                <div class="mainblock__logo"><a href="index.html">christina</a></div>
-
-                <nav class="mainblock__menu">
-                    <a href="products.html" class="mainblock__link">продукция</a>
-                    <a href="delivery.html" class="mainblock__link">доставка</a>
-                    <a href="contacts.html" class="mainblock__link">контакты</a>
-                    <a href="" class="mainblock__link"><img src="img/shop.svg" alt="корзина"></a>
-                </nav>    
-            </div>
-
-            <div class="mainblock__authorization">
-                <a href="" class="mainblock__sign-in">войти</a>
-                <a href="" class="mainblock__sign-in"><img src="img/user.svg" alt="вход"></a>
-                <a href="" class="mainblock__registration">регистрация</a>
-            </div>
-
-            <div id="myNav" class="burger">
-
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    
-                <div class="burger__content">
-                    <div class="burger__element-partition">
-                        <p class="burger__span burger__logo">christina</p>
-                    </div>
-                    <a href="index.html" class="burger__element">главная</a>
-                    <a href="products.html" class="burger__element">продукция</a>
-                    <a href="delivery.html" class="burger__element">доставка</a>
-                    <a href="contacts.html" class="burger__element">контакты</a>
-                    <a href="" class="burger__element">корзина</a>
-                </div>
-
-                <div class="burger__account">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Вход в аккаунт</p>
-                    </div>
-                    <a href="" class="burger__element">вход</a>
-                    <a href="" class="burger__element">регистрация</a>
-                </div>
-
-                <div class="burger__social">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Социальные сети</p>
-                    </div>
-                    <a href="" class="burger__element">Telegram</a>
-                    <a href="" class="burger__element">Vkontakte</a>
-                </div>
-
-                <div class="burder__number">
-                    <div class="burger__element-partition">
-                        <p class="burger__span">Контактный номер</p>
-                    </div>
-                    <a href="tel:+7(938)106-51-81" class="burger__element">+7(938)106-51-81</a>
-                    <a href="tel:+7(988)254-98-85" class="burger__element">+7(988)254-98-85</a>
-                </div>
-            </div>
-    
-            <span onclick="openNav()" class="burger__menu"><img src="/img/burger.svg" alt=""></span>
+            <?php get_header() ?>
 
             <div class="mainblock__content">
                 <div class="mainblock__text">
@@ -80,7 +27,7 @@
                     <div class="mainblock__subtitle-delivery">Компания Кристина – это широкий ассортимент разнообразной продукции для красоты и долголетия. Мы идем в ногу со временем и поставляем материалы для салонов красоты, которые имеют доказанную эффективность и легкость в работе.</div>
                 </div>
                 <div class="mainblock__footer">
-                    <a href="#title" class="mainblock__arrow"><img src="img/arrow.svg" alt="стрелка"></a>
+                    <a href="#title" class="mainblock__arrow"><img src="\wp-content\themes\CHRISTINA\img\arrow.svg" alt="стрелка"></a>
                 </div>
             </div>
 
@@ -93,23 +40,23 @@
                 <div class="content__title" id="title">Продукция</div>
                 <div class="products__setting">
                     <div class="products__setting-left">
-                        <a href=""><img src="img/filter.svg" alt="фильтр"></a>
-                        <a href="" class="products__filter">
+                        <a href="\wp-content\themes\CHRISTINA\"><img src="\wp-content\themes\CHRISTINA\img\filter.svg" alt="фильтр"></a>
+                        <a href="\wp-content\themes\CHRISTINA\" class="products__filter">
                             <p>выбрать категорию</p>
-                            <img src="img/arrow-min.svg" alt="">
+                            <img src="\wp-content\themes\CHRISTINA\img\arrow-min.svg" alt="">
                         </a>
                     </div>
                     <div class="products__setting-right">
-                        <a href="" class="products__button">найти</a>
+                        <a href="\wp-content\themes\CHRISTINA\" class="products__button">найти</a>
                         <form class="products__form">
                             <input type="text" id="name" placeholder="введите название" class="products__form-search">
                         </form>
                     </div>
                 </div>
                 <div class="products__list">
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="картинка продукта" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="картинка продукта" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -117,9 +64,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -127,9 +74,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -137,9 +84,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -147,9 +94,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -157,9 +104,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -167,9 +114,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -177,9 +124,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -187,9 +134,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -197,9 +144,9 @@
                             </div>
                         </div> 
                     </a>
-                    <a href="product.html">
+                    <a href="\wp-content\themes\CHRISTINA\product.php">
                         <div class="products__product">
-                            <div ><img src="img/test.png" alt="" class="products__img"></div>
+                            <div ><img src="\wp-content\themes\CHRISTINA\img\test.png" alt="" class="products__img"></div>
                             <div class="products__description">
                                 <p class="products__name">Rose de Mer Peeling Soap</p>
                                 <p class="products__name">Пилинговое мыло</p>
@@ -212,36 +159,5 @@
             </div>
         </div>
     </main>
-
-    <footer>
-        <div class="footer">
-
-            <div class="footer__menu">
-
-                <div class="footer__up">
-                    <div class="footer__politic"><a href="">Политика обработки персональных данных</a></div>
-                    <div class="footer__right">
-                        <a href=""><img src="img/tg.svg" alt="telegram" class="footer__icon"></a>
-                        <a href=""><img src="img/vk.svg" alt="vkontacte" class="footer__icon"></a>
-                    </div>
-                </div>
-
-                <div class="footer__line"></div>
-
-                <div class="footer__down">
-                    <p class="footer__ch">© 2022 CHRISTINA</p>
-                    <div class="footer__right">
-                        <p class="footer__right">Сайт разработала <a href="https://vk.com/ira_unicorn" class="footer__right-unicorn">Луценко Ирина</a></p>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+    
+    <?php get_footer() ?>
